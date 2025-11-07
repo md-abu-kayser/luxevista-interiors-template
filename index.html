@@ -1,0 +1,2678 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riterio | Premium Interior Design Solutions</title>
+    <meta
+      name="description"
+      content="Riterio offers premium interior design services with innovative concepts, transforming spaces into beautiful, functional environments."
+    />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Tailwind CSS & DaisyUI -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/4ee108a205.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Tailwind Custom Config -->
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+            colors: {
+              clifford: "#da373d",
+              "icon-primary": "#ABEF5F",
+              "gray-primary": "#737373",
+              "dark-bg": "#1a1a1a",
+              "dark-text": "#e6e6e6",
+              "theme-1": "#3A86FF",
+              "theme-2": "#FF006E",
+              "theme-3": "#8338EC",
+              "theme-4": "#FB5607",
+              "theme-5": "#FFBE0B",
+            },
+            animation: {
+              "fade-in": "fadeIn 0.5s ease-in-out",
+              "slide-up": "slideUp 0.7s ease-out",
+              "slide-in": "slideIn 0.8s ease-out",
+              "bounce-slow": "bounce 2s infinite",
+              "pulse-slow": "pulse 3s infinite",
+              float: "float 6s ease-in-out infinite",
+            },
+            keyframes: {
+              fadeIn: {
+                "0%": { opacity: "0" },
+                "100%": { opacity: "1" },
+              },
+              slideUp: {
+                "0%": { transform: "translateY(30px)", opacity: "0" },
+                "100%": { transform: "translateY(0)", opacity: "1" },
+              },
+              slideIn: {
+                "0%": { transform: "translateX(-30px)", opacity: "0" },
+                "100%": { transform: "translateX(0)", opacity: "1" },
+              },
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Custom CSS for enhanced styling */
+      :root {
+        --primary-color: #abef5f;
+        --secondary-color: #3a86ff;
+        --accent-color: #ff006e;
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+        transition: all 0.3s ease;
+      }
+
+      .theme-transition * {
+        transition: background-color 0.3s ease, color 0.3s ease,
+          border-color 0.3s ease;
+      }
+
+      /* Gradient backgrounds for themes */
+      .theme-1-bg {
+        background: linear-gradient(135deg, #3a86ff 0%, #5fb0ff 100%);
+      }
+
+      .theme-2-bg {
+        background: linear-gradient(135deg, #ff006e 0%, #ff5e9c 100%);
+      }
+
+      .theme-3-bg {
+        background: linear-gradient(135deg, #8338ec 0%, #b56eff 100%);
+      }
+
+      .theme-4-bg {
+        background: linear-gradient(135deg, #fb5607 0%, #ff8c5a 100%);
+      }
+
+      .theme-5-bg {
+        background: linear-gradient(135deg, #ffbe0b 0%, #ffd95c 100%);
+      }
+
+      /* Custom scrollbar */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      ::-webkit-scrollbar-track {
+        background: #f1f1f1;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: #abef5f;
+        border-radius: 10px;
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: #8bc34a;
+      }
+
+      /* Dark mode scrollbar */
+      .dark ::-webkit-scrollbar-track {
+        background: #2d2d2d;
+      }
+
+      .dark ::-webkit-scrollbar-thumb {
+        background: #3a86ff;
+      }
+
+      .dark ::-webkit-scrollbar-thumb:hover {
+        background: #2962cc;
+      }
+
+      /* Parallax effect for banner */
+      .parallax {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Glass morphism effect */
+      .glass {
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .dark .glass {
+        background: rgba(0, 0, 0, 0.2);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      /* Hover effects */
+      .hover-lift {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .hover-lift:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      }
+
+      .dark .hover-lift:hover {
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      /* Text gradient */
+      .text-gradient {
+        background: linear-gradient(90deg, #abef5f, #3a86ff);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }
+
+      /* Button animations */
+      .btn-primary {
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+
+      .btn-primary::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .btn-primary:hover::before {
+        left: 100%;
+      }
+
+      /* Loading animation */
+      .loading-dots {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+
+      .loading-dots div {
+        position: absolute;
+        top: 33px;
+        width: 13px;
+        height: 13px;
+        border-radius: 50%;
+        background: #abef5f;
+        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+      }
+
+      .loading-dots div:nth-child(1) {
+        left: 8px;
+        animation: loading-dots1 0.6s infinite;
+      }
+
+      .loading-dots div:nth-child(2) {
+        left: 8px;
+        animation: loading-dots2 0.6s infinite;
+      }
+
+      .loading-dots div:nth-child(3) {
+        left: 32px;
+        animation: loading-dots2 0.6s infinite;
+      }
+
+      .loading-dots div:nth-child(4) {
+        left: 56px;
+        animation: loading-dots3 0.6s infinite;
+      }
+
+      @keyframes loading-dots1 {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      @keyframes loading-dots3 {
+        0% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0);
+        }
+      }
+
+      @keyframes loading-dots2 {
+        0% {
+          transform: translate(0, 0);
+        }
+        100% {
+          transform: translate(24px, 0);
+        }
+      }
+
+      /* Theme-specific adjustments */
+      [data-theme="theme-1"] {
+        --primary-color: #3a86ff;
+        --secondary-color: #ff006e;
+        --accent-color: #8338ec;
+      }
+
+      [data-theme="theme-2"] {
+        --primary-color: #ff006e;
+        --secondary-color: #3a86ff;
+        --accent-color: #ffbe0b;
+      }
+
+      [data-theme="theme-3"] {
+        --primary-color: #8338ec;
+        --secondary-color: #ff006e;
+        --accent-color: #3a86ff;
+      }
+
+      [data-theme="theme-4"] {
+        --primary-color: #fb5607;
+        --secondary-color: #ffbe0b;
+        --accent-color: #3a86ff;
+      }
+
+      [data-theme="theme-5"] {
+        --primary-color: #ffbe0b;
+        --secondary-color: #fb5607;
+        --accent-color: #ff006e;
+      }
+    </style>
+  </head>
+  <body
+    class="theme-transition font-manrope bg-white dark:bg-dark-bg text-gray-800 dark:text-dark-text"
+  >
+    <!-- Header Section -->
+    <header class="sticky top-0 z-50 glass shadow-sm">
+      <!-- Navbar -->
+      <nav>
+        <div class="navbar w-5/6 mx-auto md:w-full lg:w-full">
+          <div class="navbar-start">
+            <div class="flex justify-center items-center">
+              <span class="bg-icon-primary p-1 rounded-full animate-pulse-slow">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+              <h3
+                class="text-2xl md:text-3xl lg:text-4xl ml-2 font-bold text-gradient"
+              >
+                Riterio
+              </h3>
+            </div>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 space-x-2">
+              <li>
+                <a
+                  class="font-semibold hover:text-icon-primary transition-colors duration-300"
+                  href="#home"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-primary hover:text-icon-primary transition-colors duration-300"
+                  href="#services"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-primary hover:text-icon-primary transition-colors duration-300"
+                  href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-primary hover:text-icon-primary transition-colors duration-300"
+                  href="#about"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-primary hover:text-icon-primary transition-colors duration-300"
+                  href="#testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-primary hover:text-icon-primary transition-colors duration-300"
+                  href="#blog"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-gray-primary hover:text-icon-primary transition-colors duration-300"
+                  href="#contact"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end space-x-2">
+            <!-- Theme Switcher -->
+            <div class="dropdown dropdown-end">
+              <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li>
+                  <a data-set-theme="light" class="theme-controller">Light</a>
+                </li>
+                <li>
+                  <a data-set-theme="dark" class="theme-controller">Dark</a>
+                </li>
+                <li>
+                  <a data-set-theme="theme-1" class="theme-controller"
+                    >Ocean Blue</a
+                  >
+                </li>
+                <li>
+                  <a data-set-theme="theme-2" class="theme-controller"
+                    >Rose Pink</a
+                  >
+                </li>
+                <li>
+                  <a data-set-theme="theme-3" class="theme-controller"
+                    >Royal Purple</a
+                  >
+                </li>
+                <li>
+                  <a data-set-theme="theme-4" class="theme-controller"
+                    >Sunset Orange</a
+                  >
+                </li>
+                <li>
+                  <a data-set-theme="theme-5" class="theme-controller"
+                    >Golden Yellow</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Shop and Search buttons -->
+            <div class="flex mr-3 space-x-1">
+              <span class="tooltip tooltip-bottom" data-tip="Search">
+                <i
+                  class="fa-solid fa-magnifying-glass text-gray-400 bg-gray-100 dark:bg-gray-800 p-2 rounded-full hidden md:block lg:block hover:bg-icon-primary hover:text-white transition-colors duration-300 cursor-pointer"
+                ></i>
+              </span>
+              <span class="tooltip tooltip-bottom" data-tip="Cart">
+                <i
+                  class="fa-solid fa-cart-shopping text-gray-500 bg-gray-100 dark:bg-gray-800 p-2 rounded-full hidden md:block lg:block hover:bg-icon-primary hover:text-white transition-colors duration-300 cursor-pointer"
+                ></i>
+              </span>
+            </div>
+
+            <!-- Book Consult Button -->
+            <div class="hidden md:block lg:block">
+              <button
+                class="btn bg-icon-primary hover:bg-green-500 px-4 py-5 font-bold text-sm rounded-2xl btn-primary text-white shadow-md transform transition-all duration-300 hover:scale-105"
+              >
+                Book Consult
+                <span class="text-white bg-black p-1 rounded-full ml-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="size-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                    />
+                  </svg>
+                </span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <div class="dropdown lg:hidden">
+            <div tabindex="0" role="button" class="btn btn-ghost">
+              <div class="bg-gray-200 dark:bg-gray-700 p-2 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                  />
+                </svg>
+              </div>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+            >
+              <li><a class="font-semibold" href="#home">Home</a></li>
+              <li>
+                <a class="text-gray-primary" href="#services">Services</a>
+              </li>
+              <li>
+                <a class="text-gray-primary" href="#portfolio">Portfolio</a>
+              </li>
+              <li><a class="text-gray-primary" href="#about">About</a></li>
+              <li>
+                <a class="text-gray-primary" href="#testimonials"
+                  >Testimonials</a
+                >
+              </li>
+              <li><a class="text-gray-primary" href="#blog">Blogs</a></li>
+              <li>
+                <a class="text-gray-primary" href="#contact">Contact Us</a>
+              </li>
+              <li class="divider mt-2 mb-2"></li>
+              <li>
+                <a class="flex justify-between">
+                  <span>Theme</span>
+                  <span class="badge badge-primary">New</span>
+                </a>
+                <ul class="ml-4">
+                  <li>
+                    <a data-set-theme="light" class="theme-controller">Light</a>
+                  </li>
+                  <li>
+                    <a data-set-theme="dark" class="theme-controller">Dark</a>
+                  </li>
+                  <li>
+                    <a data-set-theme="theme-1" class="theme-controller"
+                      >Ocean</a
+                    >
+                  </li>
+                  <li>
+                    <a data-set-theme="theme-2" class="theme-controller"
+                      >Rose</a
+                    >
+                  </li>
+                  <li>
+                    <a data-set-theme="theme-3" class="theme-controller"
+                      >Royal</a
+                    >
+                  </li>
+                  <li>
+                    <a data-set-theme="theme-4" class="theme-controller"
+                      >Sunset</a
+                    >
+                  </li>
+                  <li>
+                    <a data-set-theme="theme-5" class="theme-controller"
+                      >Golden</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Hero/Banner Section -->
+      <section id="home" class="relative overflow-hidden">
+        <div class="absolute inset-0 bg-black opacity-20 z-0"></div>
+        <div
+          class="parallax bg-cover bg-center"
+          style="background-image: url('assets/banner.png')"
+        ></div>
+
+        <div class="relative z-10 w-5/6 md:w-5/6 lg:w-full mx-auto">
+          <div
+            class="flex justify-center items-center text-center py-16 md:py-20 lg:py-24"
+          >
+            <div class="space-y-5 max-w-4xl animate-fade-in">
+              <div class="animate-float">
+                <img
+                  class="block mx-auto max-w-full h-auto"
+                  src="assets/banner.png"
+                  alt="Modern interior design"
+                />
+              </div>
+              <h1
+                class="text-3xl md:text-4xl lg:text-6xl font-bold text-white drop-shadow-lg animate-slide-up"
+              >
+                A barn house of this design has a striking appearance
+              </h1>
+              <p
+                class="text-white text-lg md:text-xl w-5/6 mx-auto drop-shadow-md animate-slide-up"
+                style="animation-delay: 0.2s"
+              >
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+              <div class="animate-slide-up" style="animation-delay: 0.4s">
+                <button
+                  class="btn bg-icon-primary hover:bg-green-500 px-6 py-6 font-bold text-lg rounded-2xl btn-primary text-white shadow-lg transform transition-all duration-300 hover:scale-105"
+                >
+                  View Details
+                  <span
+                    class="bg-white text-icon-primary p-1 rounded-full ml-2"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div
+          class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce"
+        >
+          <a href="#services" class="text-white text-2xl">
+            <i class="fa-solid fa-chevron-down"></i>
+          </a>
+        </div>
+      </section>
+
+      <!-- Home Design Section -->
+      <section id="about" class="py-16 md:py-20 lg:py-24 relative">
+        <!-- Background decorative elements -->
+        <div class="absolute top-0 right-0 -z-10 opacity-10">
+          <img
+            src="assets/Vector.png"
+            alt="Decorative element"
+            class="w-64 md:w-96"
+          />
+        </div>
+
+        <div
+          class="flex flex-col md:flex-col lg:flex-row w-5/6 md:w-5/6 lg:w-full mx-auto justify-center items-center gap-10 lg:gap-16"
+        >
+          <!-- Text Content -->
+          <div class="space-y-6 lg:w-1/2 animate-slide-in">
+            <!-- About Us Button -->
+            <div
+              class="flex justify-center items-center md:justify-center md:items-center lg:justify-start lg:items-start"
+            >
+              <button
+                class="flex items-center gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-3 rounded-lg hover:bg-icon-primary hover:text-white transition-all duration-300 transform hover:scale-105"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                  />
+                </svg>
+                About Us
+              </button>
+            </div>
+
+            <!-- Main Heading -->
+            <div class="space-y-4">
+              <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+                We design thoughtful,
+                <span class="text-gradient">liveable spaces</span>
+              </h2>
+              <p class="text-gray-primary text-lg">
+                The barn house captivates with its blend of rustic charm and
+                modern sophistication, featuring weathered wood, sleek metal
+                accents, and large windows that flood the space with natural
+                light.
+              </p>
+            </div>
+
+            <!-- Features -->
+            <div class="space-y-4">
+              <!-- Commercial Feature -->
+              <div
+                class="flex items-center w-full bg-white dark:bg-gray-800 shadow-lg rounded-xl p-5 hover-lift"
+              >
+                <div class="bg-icon-primary p-3 rounded-lg">
+                  <img
+                    class="w-12 h-12"
+                    src="assets/commercial.png"
+                    alt="Commercial design"
+                  />
+                </div>
+                <div class="space-y-1 ml-4">
+                  <h4 class="text-xl font-bold">Commercial</h4>
+                  <p class="text-gray-primary">
+                    The barn house captivates with its blend of rustic charm and
+                    modern sophistication.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Residential Feature -->
+              <div
+                class="flex items-center w-full bg-white dark:bg-gray-800 shadow-lg rounded-xl p-5 hover-lift"
+              >
+                <div class="bg-purple-500 p-3 rounded-lg">
+                  <img
+                    class="w-12 h-12"
+                    src="assets/residential.png"
+                    alt="Residential design"
+                  />
+                </div>
+                <div class="space-y-1 ml-4">
+                  <h4 class="text-xl font-bold">Residential</h4>
+                  <p class="text-gray-primary">
+                    The barn house captivates with its blend of rustic charm and
+                    modern sophistication.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Content -->
+          <div class="lg:w-1/2 animate-fade-in" style="animation-delay: 0.3s">
+            <div class="relative">
+              <img
+                src="assets/Rectangle.png"
+                alt="Modern interior design"
+                class="rounded-2xl shadow-2xl w-full"
+              />
+              <div
+                class="absolute -bottom-6 -left-6 bg-icon-primary p-4 rounded-2xl shadow-lg"
+              >
+                <div class="text-center text-white">
+                  <p class="text-sm">15+ Years</p>
+                  <p class="font-bold">Experience</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats Section -->
+      <section class="py-12 md:py-16 bg-gray-50 dark:bg-gray-900">
+        <div class="w-5/6 mx-auto">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            <!-- Happy Clients -->
+            <div
+              class="stat flex flex-col items-center justify-center bg-white dark:bg-gray-800 shadow-lg p-6 rounded-2xl hover-lift animate-slide-up"
+            >
+              <div class="stat-title text-icon-primary mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 0 1 .865-.501 48.172 48.172 0 0 0 3.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0 0 12 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018Z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-value text-primary text-3xl md:text-4xl">
+                235+
+              </div>
+              <div class="stat-desc text-lg">Happy Client Review</div>
+            </div>
+
+            <!-- Work Departments -->
+            <div
+              class="stat flex flex-col items-center justify-center bg-white dark:bg-gray-800 shadow-lg p-6 rounded-2xl hover-lift animate-slide-up"
+              style="animation-delay: 0.1s"
+            >
+              <div class="stat-title text-purple-500 mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-value text-primary text-3xl md:text-4xl">
+                100+
+              </div>
+              <div class="stat-desc text-lg">Work Department</div>
+            </div>
+
+            <!-- Happy Clients -->
+            <div
+              class="stat flex flex-col items-center justify-center bg-white dark:bg-gray-800 shadow-lg p-6 rounded-2xl hover-lift animate-slide-up"
+              style="animation-delay: 0.2s"
+            >
+              <div class="stat-title text-blue-500 mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-value text-primary text-3xl md:text-4xl">
+                30K+
+              </div>
+              <div class="stat-desc text-lg">Our Happy Client</div>
+            </div>
+
+            <!-- Staff Members -->
+            <div
+              class="stat flex flex-col items-center justify-center bg-white dark:bg-gray-800 shadow-lg p-6 rounded-2xl hover-lift animate-slide-up"
+              style="animation-delay: 0.3s"
+            >
+              <div class="stat-title text-red-500 mb-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-8"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"
+                  />
+                </svg>
+              </div>
+              <div class="stat-value text-primary text-3xl md:text-4xl">
+                409+
+              </div>
+              <div class="stat-desc text-lg">Staff Members</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-16 md:py-20 lg:py-24">
+        <div class="w-5/6 mx-auto">
+          <!-- Section Header -->
+          <div class="text-center space-y-4 mb-12 animate-fade-in">
+            <button
+              class="flex items-center mx-auto gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-3 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              Our Services
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+              What We <span class="text-gradient">Offer</span>
+            </h2>
+            <p class="text-gray-primary text-lg max-w-2xl mx-auto">
+              We provide comprehensive interior design services tailored to your
+              unique style and functional needs.
+            </p>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover-lift animate-slide-up"
+            >
+              <div
+                class="bg-icon-primary p-3 rounded-xl w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <img
+                  src="assets/concept.png"
+                  alt="Interior Design"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Interior Design</h3>
+              <p class="text-gray-primary mb-4">
+                Transform your space with our custom interior design solutions
+                that blend aesthetics with functionality.
+              </p>
+              <a
+                href="#"
+                class="text-icon-primary font-semibold flex items-center gap-2"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 2 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover-lift animate-slide-up"
+              style="animation-delay: 0.1s"
+            >
+              <div
+                class="bg-purple-500 p-3 rounded-xl w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <img
+                  src="assets/flow-chart.png"
+                  alt="Space Planning"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Space Planning</h3>
+              <p class="text-gray-primary mb-4">
+                Optimize your layout for better flow and functionality with our
+                expert space planning services.
+              </p>
+              <a
+                href="#"
+                class="text-purple-500 font-semibold flex items-center gap-2"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 3 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover-lift animate-slide-up"
+              style="animation-delay: 0.2s"
+            >
+              <div
+                class="bg-blue-500 p-3 rounded-xl w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <img
+                  src="assets/vision.png"
+                  alt="Consultation"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Design Consultation</h3>
+              <p class="text-gray-primary mb-4">
+                Get expert advice on color schemes, furniture selection, and
+                decor to bring your vision to life.
+              </p>
+              <a
+                href="#"
+                class="text-blue-500 font-semibold flex items-center gap-2"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 4 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover-lift animate-slide-up"
+              style="animation-delay: 0.3s"
+            >
+              <div
+                class="bg-red-500 p-3 rounded-xl w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <img
+                  src="assets/budget-planning.png"
+                  alt="Project Management"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Project Management</h3>
+              <p class="text-gray-primary mb-4">
+                From concept to completion, we manage your project ensuring
+                timely delivery and quality execution.
+              </p>
+              <a
+                href="#"
+                class="text-red-500 font-semibold flex items-center gap-2"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 5 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover-lift animate-slide-up"
+              style="animation-delay: 0.4s"
+            >
+              <div
+                class="bg-yellow-500 p-3 rounded-xl w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <img
+                  src="assets/residential.png"
+                  alt="Furniture Selection"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Furniture Selection</h3>
+              <p class="text-gray-primary mb-4">
+                Curate the perfect pieces for your space with our furniture
+                selection and procurement services.
+              </p>
+              <a
+                href="#"
+                class="text-yellow-500 font-semibold flex items-center gap-2"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Service 6 -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-6 hover-lift animate-slide-up"
+              style="animation-delay: 0.5s"
+            >
+              <div
+                class="bg-green-500 p-3 rounded-xl w-14 h-14 flex items-center justify-center mb-4"
+              >
+                <img
+                  src="assets/commercial.png"
+                  alt="Lighting Design"
+                  class="w-8 h-8"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Lighting Design</h3>
+              <p class="text-gray-primary mb-4">
+                Enhance ambiance and functionality with our custom lighting
+                design solutions for any space.
+              </p>
+              <a
+                href="#"
+                class="text-green-500 font-semibold flex items-center gap-2"
+              >
+                Learn More
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work Process Section -->
+      <section class="py-16 md:py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="w-5/6 mx-auto">
+          <!-- Section Header -->
+          <div class="text-center space-y-4 mb-12 animate-fade-in">
+            <button
+              class="flex items-center mx-auto gap-2 bg-white dark:bg-gray-800 px-4 py-3 rounded-lg shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              How We Works
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+              Our Work <span class="text-gradient">Process</span>
+            </h2>
+            <p class="text-gray-primary text-lg max-w-2xl mx-auto">
+              We follow a structured approach to ensure every project is
+              executed with precision and meets our clients' expectations.
+            </p>
+          </div>
+
+          <!-- Process Steps -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <!-- Step 1 -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover-lift animate-slide-up"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="bg-icon-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold"
+                >
+                  1
+                </div>
+                <img src="assets/concept.png" alt="Concept" class="w-12 h-12" />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Concept & Consultation</h3>
+              <p class="text-gray-primary">
+                We begin with understanding your vision, needs, and budget to
+                create a preliminary design concept.
+              </p>
+            </div>
+
+            <!-- Step 2 -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover-lift animate-slide-up"
+              style="animation-delay: 0.1s"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="bg-purple-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold"
+                >
+                  2
+                </div>
+                <img
+                  src="assets/flow-chart.png"
+                  alt="Design Process"
+                  class="w-12 h-12"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Design Development</h3>
+              <p class="text-gray-primary">
+                We refine the concept into detailed designs, including floor
+                plans, 3D visualizations, and material selections.
+              </p>
+            </div>
+
+            <!-- Step 3 -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover-lift animate-slide-up"
+              style="animation-delay: 0.2s"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="bg-blue-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold"
+                >
+                  3
+                </div>
+                <img
+                  src="assets/vision.png"
+                  alt="Supervision"
+                  class="w-12 h-12"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Implementation</h3>
+              <p class="text-gray-primary">
+                Our team manages the execution phase, coordinating with
+                contractors and ensuring quality at every step.
+              </p>
+            </div>
+
+            <!-- Step 4 -->
+            <div
+              class="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover-lift animate-slide-up"
+              style="animation-delay: 0.3s"
+            >
+              <div class="flex items-center justify-between mb-4">
+                <div
+                  class="bg-red-500 text-white rounded-full w-10 h-10 flex items-center justify-center font-bold"
+                >
+                  4
+                </div>
+                <img
+                  src="assets/budget-planning.png"
+                  alt="Budget Planning"
+                  class="w-12 h-12"
+                />
+              </div>
+              <h3 class="text-xl font-bold mb-2">Final Reveal</h3>
+              <p class="text-gray-primary">
+                We present the completed project, ensuring every detail meets
+                your expectations and our quality standards.
+              </p>
+            </div>
+          </div>
+
+          <!-- CTA Button -->
+          <div class="text-center mt-12 animate-fade-in">
+            <button
+              class="btn bg-icon-primary hover:bg-green-500 px-6 py-5 font-bold text-lg rounded-2xl btn-primary text-white shadow-lg transform transition-all duration-300 hover:scale-105"
+            >
+              Start Your Project
+              <span class="bg-white text-icon-primary p-1 rounded-full ml-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio Section -->
+      <section id="portfolio" class="py-16 md:py-20 lg:py-24">
+        <div class="w-5/6 mx-auto">
+          <!-- Section Header -->
+          <div class="text-center space-y-4 mb-12 animate-fade-in">
+            <button
+              class="flex items-center mx-auto gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-3 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              Explore our Latest works
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+              Our Latest <span class="text-gradient">Portfolio</span>
+            </h2>
+            <p class="text-gray-primary text-lg max-w-2xl mx-auto">
+              Discover our recent projects that showcase our design expertise
+              and attention to detail.
+            </p>
+          </div>
+
+          <!-- Portfolio Filter -->
+          <div class="flex flex-wrap justify-center gap-4 mb-8 animate-fade-in">
+            <button class="btn btn-active bg-icon-primary text-white">
+              All Projects
+            </button>
+            <button class="btn btn-ghost">Residential</button>
+            <button class="btn btn-ghost">Commercial</button>
+            <button class="btn btn-ghost">Office</button>
+            <button class="btn btn-ghost">Hospitality</button>
+          </div>
+
+          <!-- Portfolio Grid -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Portfolio Item 1 -->
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg animate-slide-up"
+            >
+              <img
+                src="assets/img1.png"
+                alt="Modern Living Room"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-500 flex items-end"
+              >
+                <div
+                  class="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h3 class="text-xl font-bold mb-2">Modern Living Room</h3>
+                  <p class="mb-4">
+                    A contemporary living space with clean lines and natural
+                    elements.
+                  </p>
+                  <button
+                    class="btn btn-sm bg-icon-primary border-none text-white"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg animate-slide-up"
+              style="animation-delay: 0.1s"
+            >
+              <img
+                src="assets/img2.png"
+                alt="Minimalist Kitchen"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-500 flex items-end"
+              >
+                <div
+                  class="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h3 class="text-xl font-bold mb-2">Minimalist Kitchen</h3>
+                  <p class="mb-4">
+                    Efficient and stylish kitchen design with smart storage
+                    solutions.
+                  </p>
+                  <button
+                    class="btn btn-sm bg-icon-primary border-none text-white"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg animate-slide-up"
+              style="animation-delay: 0.2s"
+            >
+              <img
+                src="assets/img3.png"
+                alt="Luxury Bedroom"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-500 flex items-end"
+              >
+                <div
+                  class="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h3 class="text-xl font-bold mb-2">Luxury Bedroom</h3>
+                  <p class="mb-4">
+                    A serene bedroom retreat with premium finishes and custom
+                    furniture.
+                  </p>
+                  <button
+                    class="btn btn-sm bg-icon-primary border-none text-white"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg animate-slide-up"
+              style="animation-delay: 0.3s"
+            >
+              <img
+                src="assets/img4.png"
+                alt="Home Office"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-500 flex items-end"
+              >
+                <div
+                  class="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h3 class="text-xl font-bold mb-2">Home Office</h3>
+                  <p class="mb-4">
+                    Productive workspace with ergonomic design and natural
+                    lighting.
+                  </p>
+                  <button
+                    class="btn btn-sm bg-icon-primary border-none text-white"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg animate-slide-up"
+              style="animation-delay: 0.4s"
+            >
+              <img
+                src="assets/img5.png"
+                alt="Commercial Space"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-500 flex items-end"
+              >
+                <div
+                  class="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h3 class="text-xl font-bold mb-2">Commercial Space</h3>
+                  <p class="mb-4">
+                    Innovative office design that promotes collaboration and
+                    creativity.
+                  </p>
+                  <button
+                    class="btn btn-sm bg-icon-primary border-none text-white"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div
+              class="group relative overflow-hidden rounded-2xl shadow-lg animate-slide-up"
+              style="animation-delay: 0.5s"
+            >
+              <img
+                src="assets/Rectangle.png"
+                alt="Outdoor Living"
+                class="w-full h-80 object-cover transition-transform duration-500 group-hover:scale-110"
+              />
+              <div
+                class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-500 flex items-end"
+              >
+                <div
+                  class="p-6 text-white transform translate-y-full group-hover:translate-y-0 transition-transform duration-500"
+                >
+                  <h3 class="text-xl font-bold mb-2">Outdoor Living</h3>
+                  <p class="mb-4">
+                    Seamless indoor-outdoor transition with comfortable
+                    entertaining spaces.
+                  </p>
+                  <button
+                    class="btn btn-sm bg-icon-primary border-none text-white"
+                  >
+                    View Details
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View More Button -->
+          <div class="text-center mt-12 animate-fade-in">
+            <button
+              class="btn btn-outline border-icon-primary text-icon-primary hover:bg-icon-primary hover:text-white px-8 py-4 font-semibold rounded-2xl"
+            >
+              View All Projects
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials Section -->
+      <section
+        id="testimonials"
+        class="py-16 md:py-20 bg-gray-50 dark:bg-gray-900"
+      >
+        <div class="w-5/6 mx-auto">
+          <!-- Section Header -->
+          <div class="text-center space-y-4 mb-12 animate-fade-in">
+            <button
+              class="flex items-center mx-auto gap-2 bg-white dark:bg-gray-800 px-4 py-3 rounded-lg shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              Client Testimonials
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+              What Our <span class="text-gradient">Clients Say</span>
+            </h2>
+            <p class="text-gray-primary text-lg max-w-2xl mx-auto">
+              Hear from our satisfied clients about their experience working
+              with Riterio.
+            </p>
+          </div>
+
+          <!-- Testimonials Carousel -->
+          <div class="carousel w-full space-x-6">
+            <!-- Testimonial 1 -->
+            <div class="carousel-item w-full md:w-1/2 lg:w-1/3">
+              <div
+                class="card bg-white dark:bg-gray-800 shadow-xl p-6 animate-slide-up"
+              >
+                <div class="flex items-center mb-4">
+                  <div class="avatar">
+                    <div class="w-16 rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+                        alt="Client"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold">Sarah Johnson</h4>
+                    <p class="text-gray-primary">Homeowner</p>
+                  </div>
+                </div>
+                <div class="rating rating-sm mb-4">
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-1"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+                <p class="text-gray-primary">
+                  "Riterio transformed our outdated home into a modern
+                  sanctuary. Their attention to detail and creative solutions
+                  exceeded our expectations. We couldn't be happier with the
+                  results!"
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="carousel-item w-full md:w-1/2 lg:w-1/3">
+              <div
+                class="card bg-white dark:bg-gray-800 shadow-xl p-6 animate-slide-up"
+                style="animation-delay: 0.1s"
+              >
+                <div class="flex items-center mb-4">
+                  <div class="avatar">
+                    <div class="w-16 rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+                        alt="Client"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold">Michael Chen</h4>
+                    <p class="text-gray-primary">Business Owner</p>
+                  </div>
+                </div>
+                <div class="rating rating-sm mb-4">
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-2"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+                <p class="text-gray-primary">
+                  "The Riterio team designed our office space to perfection.
+                  They understood our brand identity and created an environment
+                  that boosts productivity and impresses our clients."
+                </p>
+              </div>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="carousel-item w-full md:w-1/2 lg:w-1/3">
+              <div
+                class="card bg-white dark:bg-gray-800 shadow-xl p-6 animate-slide-up"
+                style="animation-delay: 0.2s"
+              >
+                <div class="flex items-center mb-4">
+                  <div class="avatar">
+                    <div class="w-16 rounded-full">
+                      <img
+                        src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=100&q=80"
+                        alt="Client"
+                      />
+                    </div>
+                  </div>
+                  <div class="ml-4">
+                    <h4 class="font-bold">Emily Rodriguez</h4>
+                    <p class="text-gray-primary">Restaurant Owner</p>
+                  </div>
+                </div>
+                <div class="rating rating-sm mb-4">
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                  <input
+                    type="radio"
+                    name="rating-3"
+                    class="mask mask-star-2 bg-orange-400"
+                    checked
+                  />
+                </div>
+                <p class="text-gray-primary">
+                  "Working with Riterio was a game-changer for our restaurant.
+                  They created an inviting atmosphere that perfectly complements
+                  our cuisine. Our customers love the new space!"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Carousel Navigation -->
+          <div class="flex justify-center w-full py-2 gap-2 mt-6">
+            <a href="#item1" class="btn btn-xs">1</a>
+            <a href="#item2" class="btn btn-xs">2</a>
+            <a href="#item3" class="btn btn-xs">3</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Blog Section -->
+      <section id="blog" class="py-16 md:py-20 lg:py-24">
+        <div class="w-5/6 mx-auto">
+          <!-- Section Header -->
+          <div class="text-center space-y-4 mb-12 animate-fade-in">
+            <button
+              class="flex items-center mx-auto gap-2 bg-gray-100 dark:bg-gray-800 px-4 py-3 rounded-lg"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              Riterio News
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+              Read Our <span class="text-gradient">Articles and News</span>
+            </h2>
+            <p class="text-gray-primary text-lg max-w-2xl mx-auto">
+              Stay updated with the latest trends, tips, and insights from the
+              world of interior design.
+            </p>
+          </div>
+
+          <!-- Blog Posts -->
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog Post 1 -->
+            <div
+              class="card bg-white dark:bg-gray-800 shadow-lg overflow-hidden hover-lift animate-slide-up"
+            >
+              <figure class="h-48 overflow-hidden">
+                <img
+                  src="assets/article1.png"
+                  alt="How to choose the right furniture"
+                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </figure>
+              <div class="card-body p-6">
+                <div
+                  class="flex justify-between text-sm text-gray-primary mb-2"
+                >
+                  <span class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+                    Jun 12, 2025
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                      />
+                    </svg>
+                    By Admin
+                  </span>
+                </div>
+                <h3 class="card-title text-xl font-bold mb-2">
+                  How to choose the right furniture for your home
+                </h3>
+                <p class="text-gray-primary mb-4">
+                  Discover expert tips on selecting furniture that complements
+                  your space, style, and lifestyle needs.
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-ghost text-icon-primary p-0 hover:bg-transparent flex items-center gap-2"
+                  >
+                    Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blog Post 2 -->
+            <div
+              class="card bg-white dark:bg-gray-800 shadow-lg overflow-hidden hover-lift animate-slide-up"
+              style="animation-delay: 0.1s"
+            >
+              <figure class="h-48 overflow-hidden">
+                <img
+                  src="assets/article2.png"
+                  alt="Color psychology in interior design"
+                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </figure>
+              <div class="card-body p-6">
+                <div
+                  class="flex justify-between text-sm text-gray-primary mb-2"
+                >
+                  <span class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+                    May 28, 2025
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                      />
+                    </svg>
+                    By Designer
+                  </span>
+                </div>
+                <h3 class="card-title text-xl font-bold mb-2">
+                  The psychology of color in interior design
+                </h3>
+                <p class="text-gray-primary mb-4">
+                  Learn how different colors affect mood and behavior, and how
+                  to use them effectively in your space.
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-ghost text-icon-primary p-0 hover:bg-transparent flex items-center gap-2"
+                  >
+                    Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Blog Post 3 -->
+            <div
+              class="card bg-white dark:bg-gray-800 shadow-lg overflow-hidden hover-lift animate-slide-up"
+              style="animation-delay: 0.2s"
+            >
+              <figure class="h-48 overflow-hidden">
+                <img
+                  src="assets/article3.png"
+                  alt="Sustainable design trends"
+                  class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                />
+              </figure>
+              <div class="card-body p-6">
+                <div
+                  class="flex justify-between text-sm text-gray-primary mb-2"
+                >
+                  <span class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"
+                      />
+                    </svg>
+                    Apr 15, 2025
+                  </span>
+                  <span class="flex items-center gap-1">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-4"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                      />
+                    </svg>
+                    By Expert
+                  </span>
+                </div>
+                <h3 class="card-title text-xl font-bold mb-2">
+                  Sustainable design trends for 2025
+                </h3>
+                <p class="text-gray-primary mb-4">
+                  Explore the latest eco-friendly materials and practices that
+                  are shaping the future of interior design.
+                </p>
+                <div class="card-actions">
+                  <button
+                    class="btn btn-ghost text-icon-primary p-0 hover:bg-transparent flex items-center gap-2"
+                  >
+                    Read More
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-5"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- View All Posts Button -->
+          <div class="text-center mt-12 animate-fade-in">
+            <button
+              class="btn btn-outline border-icon-primary text-icon-primary hover:bg-icon-primary hover:text-white px-8 py-4 font-semibold rounded-2xl"
+            >
+              View All Articles
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="py-16 md:py-20 bg-gray-50 dark:bg-gray-900">
+        <div class="w-5/6 mx-auto">
+          <!-- Section Header -->
+          <div class="text-center space-y-4 mb-12 animate-fade-in">
+            <button
+              class="flex items-center mx-auto gap-2 bg-white dark:bg-gray-800 px-4 py-3 rounded-lg shadow"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"
+                />
+              </svg>
+              Let's Connect
+            </button>
+            <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold">
+              Let's Discuss Your <span class="text-gradient">Next Project</span>
+            </h2>
+            <p class="text-gray-primary text-lg max-w-2xl mx-auto">
+              Ready to transform your space? Get in touch with us for a
+              consultation and let's bring your vision to life.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <!-- Contact Form -->
+            <div
+              class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 animate-slide-in"
+            >
+              <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-semibold">First Name</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your first name"
+                      class="input input-bordered w-full"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-semibold">Last Name</span>
+                    </label>
+                    <input
+                      type="text"
+                      placeholder="Enter your last name"
+                      class="input input-bordered w-full"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-semibold"
+                        >Email Address</span
+                      >
+                    </label>
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      class="input input-bordered w-full"
+                      required
+                    />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text font-semibold">Phone Number</span>
+                    </label>
+                    <input
+                      type="tel"
+                      placeholder="Enter your phone number"
+                      class="input input-bordered w-full"
+                      required
+                    />
+                  </div>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Project Type</span>
+                  </label>
+                  <select class="select select-bordered w-full">
+                    <option disabled selected>Select your project type</option>
+                    <option>Residential</option>
+                    <option>Commercial</option>
+                    <option>Office</option>
+                    <option>Hospitality</option>
+                    <option>Other</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text font-semibold">Message</span>
+                  </label>
+                  <textarea
+                    class="textarea textarea-bordered h-32"
+                    placeholder="Tell us about your project..."
+                  ></textarea>
+                </div>
+                <div class="form-control mt-8">
+                  <button
+                    class="btn bg-icon-primary hover:bg-green-500 px-6 py-5 font-bold text-lg rounded-2xl btn-primary text-white shadow-lg transform transition-all duration-300 hover:scale-105"
+                  >
+                    Send Message
+                    <span
+                      class="bg-white text-icon-primary p-1 rounded-full ml-2"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="size-6"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                        />
+                      </svg>
+                    </span>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div
+              class="space-y-8 animate-slide-in"
+              style="animation-delay: 0.2s"
+            >
+              <div>
+                <h3 class="text-2xl font-bold mb-6">Get In Touch</h3>
+                <p class="text-gray-primary mb-8">
+                  Have questions about our services or ready to start your
+                  project? We're here to help. Reach out to us through any of
+                  the following channels.
+                </p>
+              </div>
+
+              <!-- Contact Details -->
+              <div class="space-y-6">
+                <!-- Address -->
+                <div class="flex items-start gap-4">
+                  <div class="bg-icon-primary p-3 rounded-lg text-white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-1">Our Office</h4>
+                    <p class="text-gray-primary">
+                      123 Design Street, Creative District<br />New York, NY
+                      10001
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-start gap-4">
+                  <div class="bg-purple-500 p-3 rounded-lg text-white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-1">Phone Number</h4>
+                    <p class="text-gray-primary">
+                      +1 (555) 123-4567<br />+1 (555) 987-6543
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-start gap-4">
+                  <div class="bg-blue-500 p-3 rounded-lg text-white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-1">Email Address</h4>
+                    <p class="text-gray-primary">
+                      info@riterio.com<br />support@riterio.com
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Hours -->
+                <div class="flex items-start gap-4">
+                  <div class="bg-red-500 p-3 rounded-lg text-white">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      class="size-6"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+                      />
+                    </svg>
+                  </div>
+                  <div>
+                    <h4 class="font-bold text-lg mb-1">Working Hours</h4>
+                    <p class="text-gray-primary">
+                      Monday - Friday: 9:00 AM - 6:00 PM<br />Saturday: 10:00 AM
+                      - 4:00 PM
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Social Media -->
+              <div class="pt-6">
+                <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                <div class="flex gap-4">
+                  <a
+                    href="#"
+                    class="bg-gray-100 dark:bg-gray-700 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-icon-primary hover:text-white transition-colors duration-300"
+                  >
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 dark:bg-gray-700 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-icon-primary hover:text-white transition-colors duration-300"
+                  >
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 dark:bg-gray-700 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-icon-primary hover:text-white transition-colors duration-300"
+                  >
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 dark:bg-gray-700 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-icon-primary hover:text-white transition-colors duration-300"
+                  >
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="bg-gray-100 dark:bg-gray-700 p-3 rounded-full text-gray-700 dark:text-gray-300 hover:bg-icon-primary hover:text-white transition-colors duration-300"
+                  >
+                    <i class="fab fa-pinterest-p"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-16">
+      <div class="w-5/6 mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <!-- Company Info -->
+          <div class="space-y-4">
+            <div class="flex items-center">
+              <span class="bg-icon-primary text-black p-1 rounded-full">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
+                  />
+                </svg>
+              </span>
+              <h3 class="text-2xl font-bold ml-2">Riterio</h3>
+            </div>
+            <p class="text-gray-300">
+              Creating beautiful, functional spaces that reflect your
+              personality and enhance your lifestyle through innovative interior
+              design solutions.
+            </p>
+            <div class="flex gap-4">
+              <a
+                href="#"
+                class="bg-gray-800 p-2 rounded-full hover:bg-icon-primary transition-colors duration-300"
+              >
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-gray-800 p-2 rounded-full hover:bg-icon-primary transition-colors duration-300"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-gray-800 p-2 rounded-full hover:bg-icon-primary transition-colors duration-300"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a
+                href="#"
+                class="bg-gray-800 p-2 rounded-full hover:bg-icon-primary transition-colors duration-300"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="space-y-4">
+            <h4 class="text-xl font-bold">Quick Links</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#home"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#services"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Services</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#portfolio"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Portfolio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#testimonials"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="space-y-4">
+            <h4 class="text-xl font-bold">Our Services</h4>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Interior Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Space Planning</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Furniture Selection</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Lighting Design</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Color Consultation</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-300 hover:text-icon-primary transition-colors duration-300"
+                  >Project Management</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="space-y-4">
+            <h4 class="text-xl font-bold">Newsletter</h4>
+            <p class="text-gray-300">
+              Subscribe to our newsletter for the latest updates and design
+              inspiration.
+            </p>
+            <form class="space-y-3">
+              <input
+                type="email"
+                placeholder="Your email address"
+                class="input input-bordered w-full bg-gray-800 border-gray-700"
+              />
+              <button
+                class="btn bg-icon-primary hover:bg-green-500 w-full text-white border-none"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div
+          class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400"
+        >
+          <p>
+            &copy; 2025 Riterio. All rights reserved. | Designed with
+            <i class="fas fa-heart text-red-500"></i> by Riterio Team
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="fixed bottom-6 right-6 z-50">
+      <a
+        href="#home"
+        class="btn btn-circle bg-icon-primary text-white border-none shadow-lg hover:bg-green-500 transition-colors duration-300"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4.5 15.75l7.5-7.5 7.5 7.5"
+          />
+        </svg>
+      </a>
+    </div>
+
+    <!-- Script for Theme Switching -->
+    <script>
+      // Theme switching functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        // Set initial theme based on user preference or default to light
+        const savedTheme = localStorage.getItem("theme") || "light";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+
+        // Add event listeners to theme buttons
+        document.querySelectorAll(".theme-controller").forEach((button) => {
+          button.addEventListener("click", function () {
+            const theme = this.getAttribute("data-set-theme");
+            document.documentElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+          });
+        });
+
+        // Animation on scroll
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0px 0px -50px 0px",
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-fade-in");
+              observer.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll(".animate-on-scroll").forEach((el) => {
+          observer.observe(el);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+          anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute("href"));
+            if (target) {
+              target.scrollIntoView({
+                behavior: "smooth",
+                block: "start",
+              });
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
