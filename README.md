@@ -147,10 +147,9 @@ README.md
 
 ### Contact and Maintainer
 
-**Name:** Md Abu Kayser - Full-Stack Engineer
-
+- **Name:** Md Abu Kayser
 - **Project:** _LuxeVista-Interiors-Template_
-  **Maintainer:** [md-abu-kayser](https://github.com/md-abu-kayser)
+- **Maintainer:** [md-abu-kayser](https://github.com/md-abu-kayser)
 - **GitHub:** [github.com/abu.kayser-official](https://github.com/md-abu-kayser)
 - **Email:** [abu.kayser.official@gmail.com](mailto:abu.kayser.official@gmail.com)
 
