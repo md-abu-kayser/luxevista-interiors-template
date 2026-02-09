@@ -1,4 +1,4 @@
-# LuxeVista Interiors - Premium Design Excellence
+# LuxeVista Interiors — Premium Design Template
 
 A clean, fully responsive static website template crafted with HTML5, CSS3, Tailwind CSS and daisyUI. Perfect for showcasing interior design studios, creative portfolios, or modern business landing pages.Lightweight, accessible, and optimized for fast deployment on GitHub Pages, Netlify, or Vercel. Includes modular structure, organized assets, and clear documentation for easy customization and scaling.
 
