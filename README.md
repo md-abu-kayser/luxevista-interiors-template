@@ -1,4 +1,4 @@
-# LuxeVista Interiors — Premium Design Template
+# LuxeVista Interiors - Premium Design Template
 
 A clean, fully responsive static website template crafted with HTML5, CSS3, Tailwind CSS and daisyUI. Perfect for showcasing interior design studios, creative portfolios, or modern business landing pages.Lightweight, accessible, and optimized for fast deployment on GitHub Pages, Netlify, or Vercel. Includes modular structure, organized assets, and clear documentation for easy customization and scaling.
 
@@ -27,7 +27,7 @@ A clean, fully responsive static website template crafted with HTML5, CSS3, Tail
 
 ## Project overview
 
-LuxeVista Interiors | Premium Design Excellence is a minimal, well-structured static website template. It ships with a single-file entry point (`index.html`), a stylesheet in `css/style.css`, and an `assets/` folder for images and other static resources. The layout is intentionally simple so you can adapt it quickly for portfolios, landing pages, or prototypes.
+LuxeVista Interiors - Premium Design Excellence is a minimal, well-structured static website template. It ships with a single-file entry point (`index.html`), a stylesheet in `css/style.css`, and an `assets/` folder for images and other static resources. The layout is intentionally simple so you can adapt it quickly for portfolios, landing pages, or prototypes.
 
 ## Features
 
@@ -51,18 +51,18 @@ These steps will get the project running locally in seconds.
 1. **Clone the repository**
 
 ```powershell
-git clone https://github.com/md-abu-kayser/LuxeVista-Interiors-Template.git
+git clone https://github.com/md-abu-kayser/luxevista-interiors-template.git
 ```
 
 ```
-cd LuxeVista-Interiors-Template
+cd luxevista-interiors-template
 
 ```
 
 2. **github live page:**
 
 ```
-https://md-abu-kayser.github.io/LuxeVista-Interiors-Template/
+https://md-abu-kayser.github.io/luxevista-interiors-template/
 
 ```
 
@@ -87,7 +87,7 @@ Pick the provider you prefer - all work great with this static site.
 
 1. Push your repository to GitHub.
 2. In the repository settings --> Pages, set Source to `main` branch and root (`/`).
-3. Save - your site will be available at `https://md-abu-kayser.github.io/LuxeVista-Interiors-Template/`.
+3. Save - your site will be available at `https://md-abu-kayser.github.io/luxevista-interiors-template/`.
 
 **Notes:** If your site is in the repository root and `index.html` exists, GitHub Pages will serve it automatically.
 
