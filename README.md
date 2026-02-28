@@ -86,14 +86,14 @@ Pick the provider you prefer - all work great with this static site.
 ### GitHub Pages (quick)
 
 1. Push your repository to GitHub.
-2. In the repository settings --> Pages, set Source to `main` branch and root (`/`).
+2. In the repository settings - Pages, set Source to `main` branch and root (`/`).
 3. Save - your site will be available at `https://md-abu-kayser.github.io/luxevista-interiors-template/`.
 
 **Notes:** If your site is in the repository root and `index.html` exists, GitHub Pages will serve it automatically.
 
 ### Netlify (drag and drop or git)
 
-- **Drag-and-drop:** Zip the repo root and drop it into the Netlify dashboard Sites --> New site from Git --> Deploy site (drag-and-drop).
+- **Drag-and-drop:** Zip the repo root and drop it into the Netlify dashboard Sites - New site from Git - Deploy site (drag-and-drop).
 - **Git-backed:** Connect the GitHub repo in Netlify, select the branch, and deploy (no build command required).
 
 ### Vercel
@@ -150,13 +150,13 @@ README.md
 - **Name:** Md Abu Kayser
 - **Project:** _LuxeVista Interiors Template_
 - **Maintainer:** [md-abu-kayser](https://github.com/md-abu-kayser)
-- **GitHub:** [github.com/abu.kayser-official](https://github.com/md-abu-kayser)
 - **Email:** [abu.kayser.official@gmail.com](mailto:abu.kayser.official@gmail.com)
+- **GitHub:** [github.com/abu.kayser-official](https://github.com/md-abu-kayser)
 
 If you’d like this README tailored for a specific purpose - such as **hiring managers**, **open-source contributors**, or **client deliverables** - feel free to request a custom tone or format.
 
 ---
 
-**Thank you** for checking out **LuxeVista Interiors | Premium Design Excellence** - simple, fast, and ready to be customized into something great.
+**Thank you** for checking out **LuxeVista Interiors - Premium Design Excellence** - simple, fast, and ready to be customized into something great.
 
 ---
