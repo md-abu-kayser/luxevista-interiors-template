@@ -1,5 +1,24 @@
 # LuxeVista Interiors - Premium Design Template
 
+<!-- MIT License -->
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
+
+<!-- Demo Live Link -->
+
+[![Demo](https://img.shields.io/badge/demo-GitHub%20Pages-brightgreen)](https://md-abu-kayser.github.io/luxevista-interiors-template/)
+
+<!-- HTML & CSS -->
+
+[![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
+[![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3\&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
+
+<!-- Styling / PostCSS -->
+
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?logo=tailwindcss\&logoColor=white)](https://tailwindcss.com/docs/)
+[![PostCSS](https://img.shields.io/badge/PostCSS-efefef?logo=postcss\&logoColor=black)](https://postcss.org/)
+[![daisyUI](https://img.shields.io/badge/daisyUI-5A0EF8?logo=tailwindcss\&logoColor=white)](https://daisyui.com/)
+
 A clean, fully responsive static website template crafted with HTML5, CSS3, Tailwind CSS and daisyUI. Perfect for showcasing interior design studios, creative portfolios, or modern business landing pages.Lightweight, accessible, and optimized for fast deployment on GitHub Pages, Netlify, or Vercel. Includes modular structure, organized assets, and clear documentation for easy customization and scaling.
 
 ---
@@ -41,7 +60,7 @@ LuxeVista Interiors - Premium Design Excellence is a minimal, well-structured st
 ## Tech stack
 
 - HTML5
-- CSS3 (plain CSS; no frameworks so you keep full control)
+- CSS3 (plain CSS; tailwind frameworks so you keep full control)
 - No build step required - purely static
 
 ## Quick start
