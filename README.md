@@ -19,6 +19,25 @@
 [![PostCSS](https://img.shields.io/badge/PostCSS-efefef?logo=postcss\&logoColor=black)](https://postcss.org/)
 [![daisyUI](https://img.shields.io/badge/daisyUI-5A0EF8?logo=tailwindcss\&logoColor=white)](https://daisyui.com/)
 
+<!-- Fonts & Icons -->
+
+[![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?logo=google\&logoColor=white)](https://fonts.google.com/)
+[![Font Awesome](https://img.shields.io/badge/Font_Awesome-528DD7?logo=fontawesome\&logoColor=white)](https://fontawesome.com/)
+[![Heroicons](https://img.shields.io/badge/Heroicons-0EA5E9?logo=heroicons\&logoColor=white)](https://heroicons.com/)
+
+## Plain docs links
+
+- HTML (MDN) docs: [https://developer.mozilla.org/en-US/docs/Web/HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- CSS (MDN) docs: [https://developer.mozilla.org/en-US/docs/Web/CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- Tailwind CSS docs: [https://tailwindcss.com/docs/](https://tailwindcss.com/docs/)
+- PostCSS docs / postcss.config: [https://postcss.org/](https://postcss.org/)
+- daisyUI docs: [https://daisyui.com/](https://daisyui.com/)
+- Google Fonts docs: [https://fonts.google.com/](https://fonts.google.com/)
+- Font Awesome docs: [https://fontawesome.com/](https://fontawesome.com/)
+- Heroicons docs: [https://heroicons.com/](https://heroicons.com/)
+
+---
+
 A clean, fully responsive static website template crafted with HTML5, CSS3, Tailwind CSS and daisyUI. Perfect for showcasing interior design studios, creative portfolios, or modern business landing pages.Lightweight, accessible, and optimized for fast deployment on GitHub Pages, Netlify, or Vercel. Includes modular structure, organized assets, and clear documentation for easy customization and scaling.
 
 ---
