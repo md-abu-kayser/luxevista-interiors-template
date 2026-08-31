@@ -1,3 +1,5 @@
+/* CSS code start */
+/* ----------------------------------------- */
 :root {
   --primary-color: #abef5f;
   --secondary-color: #3a86ff;
@@ -673,3 +675,6 @@ body {
   background-color: var(--dark-bg);
   color: var(--dark-text);
 }
+
+/* CSS code end */
+/* ----------------------------------------- */
