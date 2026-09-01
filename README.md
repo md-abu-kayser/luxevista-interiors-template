@@ -2,21 +2,6 @@
 
 > A premium, responsive interior design website focused on luxury branding, visual storytelling, and conversion-oriented user experience.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
-  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
-  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/daisyUI-5A0EF8?style=for-the-badge&logo=daisyui&logoColor=white" alt="daisyUI" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Responsive-Design-0F172A?style=for-the-badge" alt="Responsive Design" />
-  <img src="https://img.shields.io/badge/Static-Frontend-0F172A?style=for-the-badge" alt="Static Frontend" />
-  <img src="https://img.shields.io/badge/Accessibility-Focused-0F172A?style=for-the-badge" alt="Accessibility Focused" />
-  <img src="https://img.shields.io/badge/MIT-License-0F172A?style=for-the-badge" alt="MIT License" />
-</p>
-
 ---
 
 ## Overview
