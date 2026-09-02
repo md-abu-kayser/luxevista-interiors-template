@@ -1,8 +1,32 @@
 # LuxeVista Interiors
 
-> A premium, responsive interior design website focused on luxury branding, visual storytelling, and conversion-oriented user experience.
+<p align="center">
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+    <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5 Documentation" />
+  </a>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">
+    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3 Documentation" />
+  </a>
+
+  <a href="https://tailwindcss.com/docs" target="_blank">
+    <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS Documentation" />
+  </a>
+
+  <a href="https://daisyui.com/docs/" target="_blank">
+    <img src="https://img.shields.io/badge/daisyUI-1AD1A5?style=for-the-badge&logo=daisyui&logoColor=white" alt="daisyUI Documentation" />
+  </a>
+
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
+    <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript Documentation" />
+  </a>
+
+</p>
 
 ---
+
+> A premium, responsive interior design website focused on luxury branding, visual storytelling, and conversion-oriented user experience.
 
 ## Overview
 
