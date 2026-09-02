@@ -46,22 +46,6 @@ Rather than treating the website as a simple collection of sections, LuxeVista i
 
 The implementation intentionally remains lightweight and framework-independent at the application level, making it straightforward to customize, maintain, and deploy as a static website.
 
----
-
-## Live Preview
-
-**Live Demo**
-
-> Add your deployed URL here when available.
-
-**Repository**
-
-```text
-https://github.com/md-abu-kayser/luxevista-interiors-template
-```
-
----
-
 ## Project Goals
 
 The primary objective of LuxeVista is to demonstrate how a static frontend can deliver a polished, premium digital experience without requiring a large application architecture.
