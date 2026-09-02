@@ -24,8 +24,6 @@
 
 </p>
 
----
-
 > A premium, responsive interior design website focused on luxury branding, visual storytelling, and conversion-oriented user experience.
 
 ## Overview
